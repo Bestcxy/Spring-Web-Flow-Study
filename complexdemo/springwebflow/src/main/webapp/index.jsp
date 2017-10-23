@@ -8,6 +8,6 @@
 </head>  
 <body>  
       <h2 align="center">Hello，WebFlow</h2><br/>
-      
+      <a href="shopping">去购物车</a>
 </body>  
 </html>

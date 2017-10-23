@@ -18,7 +18,7 @@
 	</bean>
 	<bean id="viewMappings"
 		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
-		<!-- /shopping.do 请求由 flowController 来处理 -->
+		<!-- id为 shopping 的请求由 flowController 来处理,事实上，这个请求时Web Flow的入口访问地址 -->
 		<property name="mappings">
 			<value> /shopping=flowController </value>
 		</property>

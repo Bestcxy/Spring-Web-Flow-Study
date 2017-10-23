@@ -6,7 +6,8 @@
     http://www.springframework.org/schema/webflow-config
     http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.0.xsd">
     <webflow:flow-executor id="flowExecutor" />
-	<!-- 所有 flow的定义文件它的位置在这里进行配置， flow-builder-services 用于配置 flow 的特性 -->
+	<!-- 所有 flow的定义文件它的位置在这里进行配置， flow-builder-services 用于配置 flow 的特性，这里可以自定义id的名字，将结合applicationContext-mvc.xml的
+	配置形成Web Flow的入口访问配置 -->
 	<webflow:flow-registry id="flowRegistry" flow-builder-services="flowBuilderServices">
 		<webflow:flow-location path="classpath:flows/shopping.xml" id="shopping" />
 	</webflow:flow-registry>
